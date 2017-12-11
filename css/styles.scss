@@ -1,0 +1,33 @@
+@import "modules/base";
+
+html, body {
+	margin: 0;
+}
+
+html {
+	max-height: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0;
+  background: $body-background;
+	height: 100%;
+
+	font-family: $body-font-family;
+  font-weight: normal;
+  line-height: $global-lineheight;
+  font-size: 1.7rem;
+  color: $body-font-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+// Components
+@import "components/base";
+
+// For Hotfixes
+@import "oops.scss";

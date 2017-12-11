@@ -1,0 +1,94 @@
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+		-moz-transition: $transition;
+			-o-transition: $transition;
+				transition: $transition;
+}
+
+@mixin filter($filter) {
+  -webkit-filter: $filter;
+				filter: $filter;
+}
+
+@mixin animation($animation) {
+	-webkit-animation: $animation; /* Safari 4+ */
+	-moz-animation:    $animation; /* Fx 5+ */
+	-o-animation:      $animation; /* Opera 12+ */
+	animation:         $animation; /* IE 10+, Fx 29+ */
+}
+
+@mixin appearance($appearance) {
+  -webkit-appearance: $appearance;
+	-moz-appearance: $appearance;
+	-ms-appearance: $appearance;
+	-o-appearance: $appearance;
+	appearance: $appearance;
+}
+
+@mixin overflow-x($value) {
+  -webkit-overflow-x: $value;
+	-moz-overflow-x: $value;
+	-ms-overflow-x: $value;
+	-o-overflow-x: $value;
+	overflow-x: $value;
+}
+
+@mixin transform($transform) {
+  -webkit-transform: rotate($transform);
+  // -moz-transform: rotate($transform);
+  -ms-transform: rotate($transform);
+  // -o-transform: rotate($transform);
+  transform: rotate($transform);
+}
+
+.overflow-x-hidden {
+  @include overflow-x(hidden);
+}
+
+@mixin center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+@mixin animation-play-state($state) {
+	-webkit-animation-play-state: $state; /* Chrome, Safari, Opera */
+	-moz-animation-play-state: $state;
+  -ms-animation-play-state: $state;
+  -o-animation-play-state: $state;
+  animation-play-state: $state;
+}
+
+
+/************************************************
+ ************************************************
+							Media Queries Mixins
+ ************************************************
+ ************************************************/
+
+
+@mixin mobile-only {
+  @media only screen and (max-width: 599px) { @content; }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 600px) { @content; }
+}
+
+@mixin tablet-large {
+  @media only screen and (min-width: 900px) { @content; }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 1200px) { @content; }
+}
+
+@mixin desktop-large {
+  @media only screen and (min-width: 1400px) { @content; }
+}
+
+@mixin desktop-xl {
+  @media only screen and (min-width: 1800px) { @content; }
+}

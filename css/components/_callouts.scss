@@ -1,0 +1,36 @@
+.callout {
+	background: $neutralTwo;
+	padding: 15px 25px;
+	border-radius: $global-radius;
+
+	@include flex;
+	@include flexDirection(row);
+	@include flexWrap(nowrap);
+	@include flexAlign(center);
+
+	h4, p {
+		margin: 0;
+	}
+
+	h4 {
+		color: darken($primary, 6%);
+		font-weight: bold;
+		margin-bottom: 8px;
+	}
+
+	div {
+		
+	}
+
+	.left {
+		width: 150px;
+
+		img {
+			display: block;
+		}
+	}
+
+	.right {
+		width: 100%;
+	}
+}

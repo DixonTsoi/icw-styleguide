@@ -1,0 +1,54 @@
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-center {
+	text-align: center;
+}
+
+// Show / Hide Based on Device Size
+.show-xs {
+	display: block;
+}
+
+.hidden-xs {
+	@include mobile-only {
+		display: none;	
+	}
+}
+
+.show-sm {
+	display: none;
+
+	@include tablet {
+		display: block;	
+	}
+}
+
+.hidden-sm {
+	display: block;
+
+	@include tablet {
+		display: none;
+	}
+}
+
+
+.show-md {
+	display: none;
+
+	@include tablet-large {
+		display: block;
+	}
+}
+
+.hidden-md {
+	display: block;
+	@include tablet-large {
+		display: none;
+	}
+}

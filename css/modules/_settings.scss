@@ -1,0 +1,59 @@
+// Import Files
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+// Colors
+$primary: #3498db;
+$secondary: #fff;
+
+$white: #fff;
+$black: #161616;
+$gray: #c7c7c7;
+$light-gray: #ededed;
+$dark-gray: #7e7e7e;
+
+$success: #2ce84d;
+$warning: #ff9612;
+$alert: #ff4f12;
+$neutral: #58ace3;
+$neutralTwo: #ededed;
+
+// Global Settings
+$global-font-size: 100%;
+$global-width: rem-calc(1200);
+$global-lineheight: 1.8;
+$global-radius: 4px;
+
+$body-background: $white;
+$body-font-color: $black;
+$body-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+$body-antialiased: true;
+
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+
+
+// Typography
+h1, h2, h3, h4 {
+	font-weight: 600;
+	letter-spacing: -.5px;
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+h2 {
+	font-size: 2.8rem;
+}
+
+h3 {
+	font-size: 2.35rem;
+}
+
+h4 {
+	font-size: 1.8rem;
+}
+
+p, a, button {
+	font-size: 1.7rem;
+}
