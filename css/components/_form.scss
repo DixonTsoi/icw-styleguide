@@ -1,0 +1,65 @@
+input, textarea, select, option {
+	font-size: 1.7rem;
+	padding: 12px 12px;
+	box-shadow: 0;
+	border: 1px solid $gray;
+
+	border-radius: $global-radius;
+}
+
+.expanded {
+	input, textarea, label, select {
+		width: 100%;
+	}
+}
+
+input {
+	min-width: 400px;
+}
+
+.radio-item {
+	margin-bottom: 20px;
+
+	input[type="radio"] {
+		margin: 0;
+		margin-right: 15px;
+
+		+ label {
+			font-weight: 600;
+		}
+
+		&:checked+label {
+	    color: $primary;
+		}
+
+		&:not(:checked)+label {
+	    color: $gray;
+		}
+	}
+}
+
+
+textarea {
+	min-width: 400px;
+	min-height: 150px;
+	max-width: 100%;
+	-webkit-appearance: none;
+}
+
+label {
+
+}
+
+
+select {
+	min-width: 400px;
+	box-shadow: none;
+	background: $white;
+	background-image: none;
+	-webkit-appearance: none;
+}
+
+
+option {
+
+}

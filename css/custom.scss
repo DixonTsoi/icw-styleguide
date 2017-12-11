@@ -1,0 +1,114 @@
+@import "modules/base";
+@import "components/base";
+
+
+
+
+.palette-row {
+	@include flex;
+	@include flexDirection(row);
+	@include flexWrap(wrap);
+	@include flexJustify(flex-start);
+
+	li {
+		margin-right: 20px;
+
+		div {
+			border-radius: $global-radius;
+			height: 175px;
+			width: 175px;
+		}
+	}
+}
+
+
+code {
+	display: block;
+	font-family: Consolas, 'Liberation Mono', Courier, monospace;
+	background: $light-gray;
+	font-size: 1.7rem;
+	padding: 10px;
+	display: block;
+	overflow-x: auto;
+	padding: 1rem;
+	padding-right: 4rem;
+	margin-bottom: 1.5rem;	
+	border-radius: $global-radius;
+
+	span {
+		display: block;
+	}
+}
+
+.wrapper {
+	padding: 40px;
+	max-width: 1200px;
+	margin: auto;
+}
+
+section {
+	margin-bottom: 11rem;
+}
+
+header {
+	border-bottom: 1px solid #161616;
+}
+
+article header {
+	margin-top: 4rem;
+	border-bottom: 1px solid $dark-gray;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	margin: 0;
+	padding: 0;
+}
+
+.item-row {
+	@include flex;
+	@include flexJustify(space-between);
+	@include flexWrap(nowrap);
+	@include flexDirection(row);
+	@include flexAlign(center);
+
+	&.expanded {
+		@include flexDirection(column);
+		@include flexAlign(normal);
+
+		.info {
+			width: 100%;
+		}
+
+		.item {
+			width: 100%;
+		}
+	}
+
+	margin-top: 4rem;
+	margin-bottom: 8rem;
+
+	.info {
+		width: 100%;
+	}
+
+	.item {
+		width: 100%;
+	}
+
+	@include tablet {
+		.info {
+			width: 35%;
+			padding-right: 20px;
+		}
+
+		.item {
+			width: 65%;
+		}
+	}
+}

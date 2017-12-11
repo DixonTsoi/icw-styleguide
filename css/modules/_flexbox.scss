@@ -1,0 +1,49 @@
+/************************************************
+ ************************************************
+							Flexbox Mixins
+ ************************************************
+ ************************************************/
+
+@mixin flex {
+	display: -moz-flex; /* Firefox */
+	display: -webkit-flex; /* Safari */
+	display: flex;
+
+	@content;
+}
+
+@mixin flexDirection($direction) {
+	-moz-flex-direction: $direction;
+	-webkit-flex-direction: $direction;
+	flex-direction: $direction;
+}
+
+@mixin flexJustify($justify) {
+	-webkit-justify-content: $justify;
+	-moz-justify-content: $justify;
+	justify-content: $justify;
+}
+
+@mixin flexWrap($wrap) {
+	-webkit-flex-wrap: $wrap;
+	-moz-flex-wrap: $wrap;
+	flex-wrap: $wrap;
+}
+
+@mixin flexAlign($alignment) {
+	-webkit-align-items: $alignment;
+	-moz-align-items: $alignment;
+	align-items: $alignment;
+}
+
+@mixin flexBasis($flexBasis) {
+	-moz-flex-basis: $flexBasis;
+	-webkit-flex-basis: $flexBasis; /* Safari 6.1+ */
+  flex-basis: $flexBasis;
+}
+
+@mixin flexGrow($flexGrow) {
+	-moz-flex-grow: $flexGrow;
+	-webkit-flex-grow: $flexGrow; /* Safari 6.1+ */
+  flex-grow: $flexGrow;
+}
