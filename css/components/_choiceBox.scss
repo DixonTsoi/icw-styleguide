@@ -119,8 +119,16 @@
 		}
 	}
 
-	.choice--default {
+	.choice--default, .choice--default--center {
 		@include choice\item\default;
+
+		&.expanded {
+			width: 100%;
+		}
+	}
+
+	.choice--default--center {
+		text-align: center;
 	}
 
 	.choice--default-icon {
@@ -161,5 +169,36 @@
 			}
 		}
 
+	}
+
+	.choice--radio--default {
+		@include choice\container;
+		width: 100%;
+		height: 100px;
+
+		&:not(:first-of-type) {
+			margin-left: 20px;
+		}
+
+		input[type="radio"] {
+			@include choice\item\radio;
+		}
+
+		label {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 85%;
+
+			h4 {
+				margin: 0;
+			}
+
+			span {
+				display: block;
+				margin-bottom: 12px;
+			}
+		}
 	}
 }

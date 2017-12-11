@@ -40,8 +40,15 @@ code {
 	}
 }
 
+article {
+  margin: 60px 0;
+}
+
 .wrapper {
-	padding: 40px;
+	padding: 10px;
+	@include tablet {
+		padding: 40px;
+	}
 	max-width: 1200px;
 	margin: auto;
 }
@@ -74,8 +81,12 @@ ul li {
 	@include flex;
 	@include flexJustify(space-between);
 	@include flexWrap(nowrap);
-	@include flexDirection(row);
+	@include flexDirection(column);
 	@include flexAlign(center);
+
+	@include tablet {
+		@include flexDirection(row);
+	}
 
 	&.expanded {
 		@include flexDirection(column);
@@ -110,5 +121,18 @@ ul li {
 		.item {
 			width: 65%;
 		}
+	}
+}
+
+.column-group {
+	@include flex;
+	@include flexJustify(space-between);
+	@include flexWrap(nowrap);
+	@include flexDirection(row);
+
+	padding: 35px 0;
+
+	&>div {
+		width: 50%;
 	}
 }

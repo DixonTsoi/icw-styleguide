@@ -1,5 +1,8 @@
 <html>
 	<head>
+		<!-- Foundation -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.css">
+
 
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -177,7 +180,7 @@
 				<header>
 					<h2>General UI Components</h2>
 				</header>
-				<article class="button-group">
+				<article class="group-button">
 					<header>
 						<h3>Buttons</h3>
 					</header>
@@ -228,7 +231,7 @@
 					
 				</article>
 
-				<article class="form-group">
+				<article class="group-form">
 					<header>
 						<h3>Form Elements</h3>
 					</header>
@@ -294,13 +297,33 @@
 						</div>
 					</div>
 				</article>
+
+				<article class="group-misc">
+					<header>
+						<h3>Misc Elements</h3>
+					</header>
+					<div class="item-row">
+						<div class="info">
+							<h3>Tooltips</h3>
+							<p>Use to call for attention</p>
+						</div>
+						<div class="item">
+							<p>Tooltips are nifty for displaying extended information for a term or action on a page.</p>
+							<p>
+...clearing away the brambles with the
+<span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="A tool used for cutting crops.">scythe.</span>
+At the spot thus attained a second peg was driven, and about this, as a centre, a rude circle, about four feet in diameter, described. Taking now a spade himself, and giving one to Jupiter and one to me, Legrand begged us to set about one to digging as quickly as possible.
+</p>
+						</div>
+					</div>
+				</article>
 			</section>
 
 			<section id="customFormUI">
 				<header>
 					<h2>Custom Form Elements</h2>
 				</header>
-				<article class="custom-form-element-group">
+				<article class="group-custom-form-element">
 					<header>
 						<h3>Options</h3>
 					</header>
@@ -347,6 +370,23 @@
 
 					<div class="item-row">
 						<div class="info">
+							<h3>Default Option no icon (expanded)</h3>
+							<p>Use to call for attention</p>
+						</div>
+						<div class="item">
+							<div class="choice-group--container">
+								<a href="#" class="choice--default--center expanded">
+					    		<h4>Choice #1</h4>
+						    </a>
+						    <a href="#" class="choice--default--center expanded">
+					    		<h4>Choice #2</h4>
+						    </a>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-row">
+						<div class="info">
 							<h3>Radio Option w/ icon</h3>
 							<p>Use to call for attention</p>
 						</div>
@@ -383,6 +423,31 @@
 						    	</label>
 						    </div>
 						  </div>
+						</div>
+					</div>
+
+					<div class="item-row">
+						<div class="info">
+							<h3>Radio Option no icon (expanded)</h3>
+							<p>Use to call for attention</p>
+						</div>
+						<div class="item">
+							<div class="choice-group--container">
+								<div class="choice--radio--default">
+						    	<input type="radio" id="optionIconAA"
+						     name="optionNoIconCenter" value="phone">
+						    	<label for="optionIconBB">
+						    		<h4>Choice One</h4>
+						    	</label>
+						    </div>
+						    <div class="choice--radio--default">
+						    	<input type="radio" id="optionIconBB"
+						     name="optionNoIconCenter" value="phone">
+						    	<label for="optionIconBB">
+						    		<h4>Choice Two</h4>
+						    	</label>
+						    </div>
+							</div>
 						</div>
 					</div>
 
@@ -554,7 +619,7 @@
 				<header>
 					<h2>Miscellaneous UI Components</h2>
 				</header>
-				<article class="button-group">
+				<article class="group-callout">
 					<header>
 						<h3>Callouts and Alerts</h3>
 					</header>
@@ -571,12 +636,10 @@
 									</strong>
 								</label>
 								<div class="callout primary">
-									<div>
-										<h4>Hey, you there!</h4>
-										<p>
-											This is some basic information for you. This information may or may not be helpful. I hope it is.
-										</p>
-									</div>
+									<h4>Hey, you there!</h4>
+									<p>
+										This is some basic information for you. This information may or may not be helpful. I hope it is.
+									</p>
 								</div>
 								<label>
 									<strong>
@@ -584,14 +647,39 @@
 									</strong>
 								</label>
 								<div class="callout primary">
-									<div class="left">
-										<img src="http://placehold.it/64x64">
+									<div class="callout--row">
+										<div class="left">
+											<img src="http://placehold.it/80x80">
+										</div>
+										<div class="right">
+											<h4>Hey, you there!</h4>
+											<p>
+												This is some basic information for you. This information may or may not be helpful. I hope it is.
+											</p>
+										</div>
 									</div>
-									<div class="right">
-										<h4>Hey, you there!</h4>
+								</div>
+								<div class="column-group">
+									<div>
 										<p>
-											This is some basic information for you. This information may or may not be helpful. I hope it is.
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex ligula, efficitur quis tortor quis, mollis fringilla mauris. Vivamus luctus, orci ut vulputate laoreet, justo diam lacinia justo, eu gravida orci risus et quam. Fusce a metus elementum orci condimentum condimentum sed sit amet ex. Pellentesque tincidunt luctus venenatis. Ut malesuada pharetra suscipit. Phasellus efficitur sem dui, non interdum sapien euismod eu. Nam auctor elit vitae eros semper convallis. Donec malesuada fermentum quam, sit amet commodo eros malesuada suscipit. Nulla facilisi. Proin dictum ipsum viverra felis molestie rhoncus. Sed at est ut quam pretium aliquet. Ut maximus erat quis gravida placerat. In pretium metus venenatis lacus sodales, a lacinia quam malesuada. Mauris quis lorem mollis, ullamcorper sapien ac, interdum arcu. Pellentesque vel vehicula dolor.
 										</p>
+									</div>
+									<div>
+										<div class="callout primary">
+											<div class="callout--column">
+												<div class="top">
+													<img src="http://placehold.it/80x80">
+												</div>
+												<div class="bottom">
+													<h4>Hey, you there!</h4>
+													<p>
+														This is some basic information for you. This information may or may not be helpful. I hope it is.
+													</p>
+													<a href="#">Here's a link</a>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
