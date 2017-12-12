@@ -136,3 +136,36 @@ ul li {
 		width: 50%;
 	}
 }
+
+.icon-group--container {
+	@include flex;
+	@include flexWrap(wrap);
+	@include flexDirection(row);
+	@include flexJustify(space-between);
+
+	li {
+		width: calc(50% - 10px);
+		@include tablet {
+			width: calc(33.3% - 15px);
+		}
+		@include tablet-large {
+			width: calc(25% - 15px);
+		}
+		margin-bottom: 20px;
+
+		div {
+			text-align: center;
+			height: 150px;
+			box-shadow: 0px 0px 0px 1px $gray;
+			border-radius: $global-radius;
+			@include flex;
+			@include flexAlign(center)
+		}
+
+		img {
+			@include icon\large;
+			display: block;
+			margin: auto;
+		}
+	}
+}

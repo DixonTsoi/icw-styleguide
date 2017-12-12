@@ -1,0 +1,38 @@
+.tooltip {
+	line-height: 1.5;
+  max-width: 16rem;
+  border-radius: 4px;
+}
+.has-tip {
+	border-bottom: 0;
+}
+
+@mixin icon\default {
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+
+	@content;
+}
+
+@mixin icon\large {
+	@include icon\default;
+	width: 68px;
+	height: 68px;
+}
+
+@mixin icon\small {
+	@include icon\default;
+	width: 12px;
+	height: 12px;
+}
+
+@mixin icon\custom($width) {
+	width: $width;
+	height: auto;
+}
+
+.icon--tooltip {
+	@include icon\default;
+	margin-top: -5px;
+}

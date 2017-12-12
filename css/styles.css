@@ -101,6 +101,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.tooltip {
+  line-height: 1.5;
+  max-width: 16rem;
+  border-radius: 4px; }
+
+.has-tip {
+  border-bottom: 0; }
+
+.icon--tooltip {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin-top: -5px; }
+
 button, .button {
   text-decoration: none;
   text-align: center;
