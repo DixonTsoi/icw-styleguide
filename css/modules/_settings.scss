@@ -11,9 +11,9 @@ $gray: #c7c7c7;
 $light-gray: #ededed;
 $dark-gray: #7e7e7e;
 
-$success: #2ce84d;
-$warning: #ff9612;
-$alert: #ff4f12;
+$success: darken(#2ce84d, 12%);
+$warning: darken(#ff9612, 7%);
+$alert: darken(#ff4f12, 12%);
 $neutral: #58ace3;
 $neutralTwo: #ededed;
 

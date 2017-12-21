@@ -1,0 +1,147 @@
+table {
+	tbody {
+		border: 0;
+		border-radius: $global-radius;
+		box-shadow: 0px 0px 0px 1px $gray, 0px 2px 26px rgba($black, 0.05);
+	}
+}
+table tbody th {
+	padding: 1rem 2rem 1rem;
+}
+
+table tbody td {
+  padding: 2.2rem 2rem 1.66rem;
+}
+
+th {
+	text-align: left;
+	background: $light-gray;
+	font-size: 1.7rem;
+}
+
+tr {
+}
+
+td {
+	a {
+		text-decoration: none;
+	}
+	h4 {
+		color: $primary;
+		font-weight: bold;
+	}
+
+	p {
+		color: $black;
+		font-size: 1.55rem;
+		font-weight: normal;
+	}
+}
+
+td[data-status] {
+	font-weight: bold;
+}
+
+td[data-status="accepted"], td[data-status="ready"] {
+	color: $success;
+}
+
+td[data-status="cancel"], td[data-status="expired"] {
+	color: $gray;
+}
+
+td[data-status="pending"], td[data-status="progress"] {
+	color: $warning;
+}
+
+table tbody tr {
+	border-bottom: 1px solid $light-gray;
+
+	&:hover {
+		background: rgba($light-gray, 0.3);
+	}
+
+	&:first-of-type {
+		border-bottom: 1.5px solid $gray;
+	}
+
+	&:last-of-type {
+		border-bottom: none;
+	}
+}
+
+table tbody tr:nth-child(even) {
+	background: $white;
+	border-bottom: 1px solid $light-gray;
+
+	&:hover {
+		background: rgba($light-gray, 0.3);
+	}
+}
+
+
+
+// Tab for table
+
+.tabs.table-tab {
+  margin: 0;
+  border: 0;
+  list-style-type: none;
+
+  &:after {
+  	content: "";
+  	display: block;
+  	width: 100%;
+  	height: 4px;
+  	background: $gray;
+  }
+}
+
+.tabs-title>a {
+	text-decoration: none;
+  display: block;
+  padding: 1.25rem 4rem 1.25rem;
+  font-size: 1.85rem;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.tabs-title:first-of-type > a {
+	padding: 1.25rem 4rem 1.25rem 2rem;
+}
+
+.tabs-title>a:focus, .tabs-title>a[aria-selected=true] {
+  background: none;
+  color: $primary;
+  @include transition(color 0.3s ease);
+}
+
+.tabs-title.is-active {
+	&:after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 4px;
+		background: $primary;
+		position: relative;
+		top: 4px;
+	}
+}
+
+.tabs-title>a[aria-selected=false] {
+  background: none;
+  color: $gray;
+  @include transition(color 0.3s ease);
+}
+
+.tabs-title>a:focus {
+	outline: none;
+}
+
+.tabs-content {
+  border: 0;
+  background: none;
+  color: $black;
+  transition: all .5s ease;
+
+}

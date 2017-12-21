@@ -1,0 +1,15 @@
+.pagination li {
+	font-size: 1.65rem;
+}
+
+.pagination a, .pagination button {
+	padding: 1rem 1.5rem;
+	text-decoration: none;
+	border-radius: $global-radius;
+}
+
+.pagination .current {
+  padding: 1rem 1.5rem;
+  background: $primary;
+  color: $white;
+}
