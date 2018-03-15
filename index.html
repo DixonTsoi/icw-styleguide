@@ -18,6 +18,35 @@
 	</head>
 
 	<body>
+		<nav>
+			<div class="nav-wrapper">
+				<div class="nav-left">
+					<div class="logo"><img src="http://placehold.it/200x135"></div>
+					<div>
+						<ul>
+							<li><a class="active" href="#">Test</a></li>
+							<li><a href="#">Test</a></li>
+							<li><a href="#">Test</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="nav-right">
+					<div>
+						<ul>
+							<li><a href="#"><img src="http://placehold.it/32x32"></a></li>
+							<li><a href="#"><img src="http://placehold.it/32x32"></a></li>
+							<li><a href="#"><img src="http://placehold.it/32x32"></a></li>
+							<li><a href="#" class="primary button">Make an update</a></li>
+						</ul>
+					</div>
+					<div>
+						<!-- <a href="#" class="button primary small">
+							Click Me
+						</a> -->
+					</div>
+				</div>
+			</div>
+		</nav>
 		<div class="wrapper">
 			<section>
 				<h1>IC Workshop Styleguide</h1>
@@ -129,11 +158,11 @@
 							<h3>Success</h3>
 							<!-- <pre> -->
 								<code>
-									<span class="hex">HEX: #2ce84d</span>
+									<span class="hex">HEX: #1bb135</span>
 									<span class="sass">$success</span>
 								</code>
 							<!-- </pre> -->
-							<div style="background-color: #2ce84d">
+							<div style="background-color: #1bb135">
 							</div>
 						</li>
 						<li>
@@ -157,10 +186,10 @@
 						<li>
 							<h3>Neutral</h3>
 							<code>
-								<span class="hex">HEX: #58ace3</span>
+								<span class="hex">HEX: #4a4a4a</span>
 								<span class="sass">$neutral</span>
 							</code>
-							<div style="background-color: #58ace3">
+							<div style="background-color: #4a4a4a">
 							</div>
 						</li>
 						<li>
@@ -205,6 +234,55 @@
 							<a href="#" class="button secondary">
 								Click me
 							</a>
+						</div>
+					</div>
+
+					<div class="item-row">
+						<div class="info">
+							<h3>Secondary (Caution)</h3>
+							<p>For an alternative button style</p>
+						</div>
+						<div class="item">
+							<a href="#" class="button secondary caution">
+								Careful!
+							</a>
+						</div>
+					</div>
+
+					<div class="item-row">
+						<div class="info">
+							<h3>Primary - Size Variants</h3>
+							<p>Different sizes based on different class names</p>
+						</div>
+						<div class="item">
+							<div>
+								<button class="primary tiny">
+									Tiny
+								</button>
+								<button class="primary small">
+									Small
+								</button>
+								<button class="primary">
+									Default
+								</button>
+								<button class="primary large">
+									Large
+								</button>
+							</div>
+							<div>
+								<button class="secondary tiny">
+									Tiny
+								</button>
+								<button class="secondary small">
+									Small
+								</button>
+								<button class="secondary">
+									Default
+								</button>
+								<button class="secondary large">
+									Large
+								</button>
+							</div>
 						</div>
 					</div>
 
@@ -946,11 +1024,14 @@
 								</div>
 							</div>
 							<div>
-																<table>
+								<table>
 								  <tr>
-								    <th>Type</th>
-								    <th>Last Update</th>
-								    <th>Status</th>
+								    <th>Purchase Order #</th>
+								    <th>Factory Audit</th>
+								    <th>Product Testing</th>
+								    <th>Inspection</th>
+								    <th>Technical File</th>
+								    <th>Next Deadline</th>
 								  </tr>
 								  <tr>
 								    <td data-type="">
@@ -959,28 +1040,11 @@
 								    		<p>Product type, information, tags</p>
 								    	</a>
 								    </td>
-								    <td data-date="">2 days ago</td>
 								    <td data-status="accepted">Accepted</td>
-								  </tr>
-								  <tr>
-								    <td data-type="">
-								    	<a href="#">
-								    		<h4>Product Testing</h4>
-								    		<p>Product type, information, tags</p>
-								    	</a>
-								    </td>
-								    <td data-date="">2 days ago</td>
 								    <td data-status="progress">In Progress</td>
-								  </tr>
-								  <tr>
-								    <td data-type="">
-								    	<a href="#">
-								    		<h4>Product Testing</h4>
-								    		<p>Product type, information, tags</p>
-								    	</a>
-								    </td>
-								    <td data-date="">2 days ago</td>
 								    <td data-status="cancel">Cancelled</td>
+								    <td data-status="empty">-</td>
+								    <td data-date="">2 days ago</td>
 								  </tr>
 								  <tr>
 								    <td data-type="">
@@ -989,8 +1053,11 @@
 								    		<p>Product type, information, tags</p>
 								    	</a>
 								    </td>
+								    <td data-status="accepted">Accepted</td>
+								    <td data-status="progress">In Progress</td>
+								    <td data-status="cancel">Cancelled</td>
+								    <td data-status="empty">-</td>
 								    <td data-date="">2 days ago</td>
-								    <td data-status="pending">Pending Information</td>
 								  </tr>
 								  <tr>
 								    <td data-type="">
@@ -999,8 +1066,11 @@
 								    		<p>Product type, information, tags</p>
 								    	</a>
 								    </td>
+								    <td data-status="accepted">Accepted</td>
+								    <td data-status="empty">-</td>
+								    <td data-status="cancel">Cancelled</td>
+								    <td data-status="progress">In Progress</td>
 								    <td data-date="">2 days ago</td>
-								    <td data-status="ready">Quotation Ready</td>
 								  </tr>
 								  <tr>
 								    <td data-type="">
@@ -1009,8 +1079,37 @@
 								    		<p>Product type, information, tags</p>
 								    	</a>
 								    </td>
+								    <td data-status="accepted">Accepted</td>
+								    <td data-status="progress">In Progress</td>
+								    <td data-status="cancel">Cancelled</td>
+								    <td data-status="empty">-</td>
 								    <td data-date="">2 days ago</td>
-								    <td data-status="expired">Expired</td>
+								  </tr>
+								  <tr>
+								    <td data-type="">
+								    	<a href="#">
+								    		<h4>Product Testing</h4>
+								    		<p>Product type, information, tags</p>
+								    	</a>
+								    </td>
+								    <td data-status="accepted">Accepted</td>
+								    <td data-status="empty">-</td>
+								    <td data-status="cancel">Cancelled</td>
+								    <td data-status="progress">In Progress</td>
+								    <td data-date="">2 days ago</td>
+								  </tr>
+								  <tr>
+								    <td data-type="">
+								    	<a href="#">
+								    		<h4>Product Testing</h4>
+								    		<p>Product type, information, tags</p>
+								    	</a>
+								    </td>
+								    <td data-status="accepted">Accepted</td>
+								    <td data-status="empty">-</td>
+								    <td data-status="cancel">Cancelled</td>
+								    <td data-status="progress">In Progress</td>
+								    <td data-date="">2 days ago</td>
 								  </tr>
 								</table>
 							</div>

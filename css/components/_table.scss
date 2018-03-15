@@ -1,8 +1,10 @@
 table {
 	tbody {
-		border: 0;
+		border: 1px solid $light-gray;
 		border-radius: $global-radius;
-		box-shadow: 0px 0px 0px 1px $gray, 0px 2px 26px rgba($black, 0.05);
+		// box-shadow: 0px 0px 0px 1px $gray, 0px 2px 26px rgba($black, 0.05);
+		box-shadow: 0px 11px 20px rgba($black, 0.02), 0px 5px 15px rgba($black,0.01), 0px 2.5px 2px rgba($black,0.2);
+		background: $white;
 	}
 }
 table tbody th {
@@ -15,54 +17,57 @@ table tbody td {
 
 th {
 	text-align: left;
-	background: $light-gray;
-	font-size: 1.7rem;
+	color: $neutral;
+	font-size: 1.25rem;
+	font-weight: 600;
 }
 
 tr {
 }
 
 td {
+	font-size: 1.35rem;
 	a {
 		text-decoration: none;
 	}
 	h4 {
 		color: $primary;
 		font-weight: bold;
+		font-size: 1.35rem;
 	}
 
 	p {
 		color: $black;
-		font-size: 1.55rem;
+		font-size: 1.2rem;
 		font-weight: normal;
 	}
 }
 
 td[data-status] {
-	font-weight: bold;
+	font-weight: 600;
 }
 
 td[data-status="accepted"], td[data-status="ready"] {
 	color: $success;
 }
 
-td[data-status="cancel"], td[data-status="expired"] {
+td[data-status="cancel"], td[data-status="expired"], td[data-status="empty"] {
 	color: $gray;
 }
 
 td[data-status="pending"], td[data-status="progress"] {
-	color: $warning;
+	color: $neutral;
 }
 
 table tbody tr {
 	border-bottom: 1px solid $light-gray;
 
-	&:hover {
-		background: rgba($light-gray, 0.3);
-	}
+	// &:hover {
+	// 	background: rgba($light-gray, 0.3);
+	// }
 
 	&:first-of-type {
-		border-bottom: 1.5px solid $gray;
+		// border-bottom: 1.5px solid $gray;
 	}
 
 	&:last-of-type {
@@ -71,12 +76,12 @@ table tbody tr {
 }
 
 table tbody tr:nth-child(even) {
-	background: $white;
 	border-bottom: 1px solid $light-gray;
+	background: inherit;
 
-	&:hover {
-		background: rgba($light-gray, 0.3);
-	}
+	// &:hover {
+	// 	background: rgba($light-gray, 0.3);
+	// }
 }
 
 

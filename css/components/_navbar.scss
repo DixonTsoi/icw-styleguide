@@ -1,0 +1,57 @@
+nav {
+	// position: fixed;
+	// z-index: 1000;
+	width: 100%;
+	background: $white;
+	border-bottom: 1px solid $gray;
+	
+	.nav-wrapper {
+		max-width: 1200px;
+		margin: auto;
+		padding: 10px 0;
+		@include flex;
+		@include flexWrap(nowrap);
+		@include flexJustify(space-between);
+		@include flexDirection(row);
+		@include flexAlign(center);
+	}
+
+
+	.nav-left, .nav-right {
+		width: auto;
+		@include flex;
+		@include flexWrap(nowrap);
+		@include flexJustify(space-between);
+		@include flexDirection(row);
+		@include flexAlign(center);
+	}
+
+	ul li {
+		display: inline-block;
+		margin: 0 10px;
+	}
+
+	.nav-left {
+		ul li a {
+			color: $black;
+			font-weight: 600;
+			text-decoration: none;
+			&.active {
+				color: $primary;
+			}
+		}
+	}
+
+	.logo {
+		margin-right: 18px;
+		img {
+			max-height: 48px;
+		}
+	}
+
+	.primary.button {
+		padding: 8px 25px;
+		font-size: smaller;
+		margin: 0;
+	}
+}

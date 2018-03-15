@@ -10,20 +10,21 @@ $black: #161616;
 $gray: #c7c7c7;
 $light-gray: #ededed;
 $dark-gray: #7e7e7e;
+$background-gray: #fefeff;
 
-$success: darken(#2ce84d, 12%);
+$success: #1bb135;
 $warning: darken(#ff9612, 7%);
 $alert: darken(#ff4f12, 12%);
-$neutral: #58ace3;
+$neutral: #4a4a4a;
 $neutralTwo: #ededed;
 
 // Global Settings
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
-$global-lineheight: 1.8;
+$global-lineheight: 200%;
 $global-radius: 4px;
 
-$body-background: $white;
+$body-background: $background-gray;
 $body-font-color: $black;
 $body-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 $body-antialiased: true;

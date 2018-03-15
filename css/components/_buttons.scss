@@ -31,7 +31,7 @@ button, .button {
 
 	&:hover {
 		color: $white;
-		transform: translateY(-3px);
+		// transform: translateY(-3px);
 	}
 
 
@@ -58,6 +58,29 @@ button, .button {
 				@include transition(all 0.25s ease-out);
 			}
 		}
+
+		&.caution {
+			color: $alert;
+
+			&:hover {
+				color: $alert;
+			}
+		}
+	}
+
+
+	&.tiny {
+		font-size: x-small;
+		padding: 10px 30px;
+	}
+
+	&.small {
+		font-size: smaller;
+		padding: 10px 33px;
+	}
+
+	&.large {
+		font-size: x-large;
 	}
 
 
