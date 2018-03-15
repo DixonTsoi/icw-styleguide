@@ -132,7 +132,8 @@ button, .button {
   -moz-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
-  background-color: #3498db; }
+  background-color: #3498db;
+  box-shadow: 0px 11px 20px rgba(22, 22, 22, 0.02), 0px 5px 15px rgba(22, 22, 22, 0.01), 0px 2.5px 2px rgba(22, 22, 22, 0.2); }
   button.expanded, .button.expanded {
     display: block; }
   button:hover, .button:hover {
@@ -148,7 +149,7 @@ button, .button {
   button.secondary, .button.secondary {
     color: #3498db;
     background-color: #fff;
-    border: 1px solid #c7c7c7; }
+    border: 1px solid rgba(199, 199, 199, 0.8); }
     button.secondary:hover, .button.secondary:hover {
       color: #3498db; }
       button.secondary:hover:hover, .button.secondary:hover:hover {
@@ -243,6 +244,7 @@ input, textarea, select, option, [type='text'], [type='password'], [type='date']
   padding: 12px;
   border: 1px solid #c7c7c7;
   line-height: 100%;
+  background: #fff;
   border-radius: 4px; }
 
 .expanded input, .expanded textarea, .expanded label, .expanded select {
@@ -326,12 +328,16 @@ td[data-status="pending"], td[data-status="progress"] {
 
 table tbody tr {
   border-bottom: 1px solid #ededed; }
+  table tbody tr:not(:first-of-type):hover {
+    background: rgba(237, 237, 237, 0.3); }
   table tbody tr:last-of-type {
     border-bottom: none; }
 
 table tbody tr:nth-child(even) {
   border-bottom: 1px solid #ededed;
   background: inherit; }
+  table tbody tr:nth-child(even):hover {
+    background: rgba(237, 237, 237, 0.3); }
 
 .tabs.table-tab {
   margin: 0;

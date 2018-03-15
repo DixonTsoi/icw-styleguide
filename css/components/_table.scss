@@ -61,10 +61,11 @@ td[data-status="pending"], td[data-status="progress"] {
 
 table tbody tr {
 	border-bottom: 1px solid $light-gray;
-
-	// &:hover {
-	// 	background: rgba($light-gray, 0.3);
-	// }
+	&:not(:first-of-type) {
+		&:hover {
+			background: rgba($light-gray, 0.3);
+		}
+	}
 
 	&:first-of-type {
 		// border-bottom: 1.5px solid $gray;
@@ -79,9 +80,9 @@ table tbody tr:nth-child(even) {
 	border-bottom: 1px solid $light-gray;
 	background: inherit;
 
-	// &:hover {
-	// 	background: rgba($light-gray, 0.3);
-	// }
+	&:hover {
+		background: rgba($light-gray, 0.3);
+	}
 }
 
 
